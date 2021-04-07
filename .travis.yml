@@ -1,0 +1,9 @@
+sudo: required
+language: generic
+services:
+  - docker
+branches:
+  only:
+    - master
+script:
+  - bash scripts/travis.sh

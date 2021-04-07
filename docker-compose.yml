@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  musketeers:
+    build: .
+    image: flemay/musketeers:latest
+    command: bash
+    env_file: .env
+    volumes:
+      - .:/opt/app
+    working_dir: /opt/app
