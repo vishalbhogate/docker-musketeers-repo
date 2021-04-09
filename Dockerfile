@@ -15,7 +15,9 @@ RUN apk --no-cache update && apk --no-cache upgrade \
 
 # for some reasons packages "gcc python2-dev openssl-dev libffi-dev musl-dev" are required
 # to install compose, which previously were not
-RUN pip install --upgrade pip docker-compose
+RUN pip install --upgrade pip
+
+RUN pip install --quiet docker-compose~=1.24.0
 
 COPY --from=build-ecr-plugin /go/src/github.com/awslabs/amazon-ecr-credential-helper/bin/linux-amd64/docker-credential-ecr-login /bin
 RUN mkdir -p ~/.docker
