@@ -1,8 +1,3 @@
-[![Build Status][linkTravisCIProjectBadge]][linkTravisCIProject]
-[![Docker Build Status][linkBadgeDockerProjectBuildBadge]][linkDockerHubProjectBuild]
-[![Generic badge][linkDockerHubProjectBadge]][linkDockerHubProject]
-[![License][linkLicenseBadge]][linkLicense]
-
 # Docker - Musketeers
 
 🐳 Lightweight image with essential tools for a [3 Musketeers][link3Musketeers] project. ⚔️

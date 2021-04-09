@@ -1,5 +1,5 @@
 FROM docker
-LABEL maintainer "@flemay"
+LABEL maintainer "learnawstechclub"
 RUN apk --no-cache update && apk --no-cache upgrade \
     && apk --no-cache add --upgrade make zip git curl py-pip openssl bash gettext \
       gcc python2-dev openssl-dev libffi-dev musl-dev
